@@ -11,7 +11,10 @@ def home(request):
 def create_ticket(request):
     form = ticketForm()
     if request.method == 'POST':
-        form = ticketForm(request.POST, request.FILES)
+        if request.FILES:
+            form = ticketForm(request.POST, request.FILES)
+        else:
+            form = ticketForm(request.POST)
         if form.is_valid:
             form = form.save(commit=False)
             form.user = request.user
@@ -37,7 +40,11 @@ def ticket_update(request, id):
     ticket = Ticket.objects.get(id=id)
     form = ticketForm(instance=ticket)
     if request.method == 'POST':
-        form = ticketForm(request.POST, instance=ticket)
+        if request.FILES:
+            form = ticketForm(request.POST, request.FILES, instance=ticket)
+        else:
+            form = ticketForm(request.POST, instance=ticket)
+
         if form.is_valid():
             form.save()
             return redirect('tickets')
