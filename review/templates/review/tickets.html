@@ -1,0 +1,11 @@
+{% extends 'review/base.html' %} 
+{% block content %}
+    <h1>Liste des tickets :</h1>
+    {% for ticket in tickets %}
+        <p>{{ ticket.title }}</p>
+        <p>{{ ticket.description }}</p>
+        <p>{{ ticket.user }}</p>
+        <p>{{ ticket.time_created }}</p>
+        --------------------------------
+    {% endfor %}
+{% endblock %}
