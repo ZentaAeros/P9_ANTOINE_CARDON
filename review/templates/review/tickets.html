@@ -4,8 +4,20 @@
     {% for ticket in tickets %}
         <p>{{ ticket.title }}</p>
         <p>{{ ticket.description }}</p>
-        <p>{{ ticket.user }}</p>
+        {% if ticket.image %}
+            <img src="{{ ticket.image.url }}" alt="" />
+        {% endif %}
+        {% if ticket.user == user %}
+            <p>Posté par moi</p>
+        {% else %}
+            <p>Posté par {{ ticket.user }}</p>
+        {% endif %}
         <p>{{ ticket.time_created }}</p>
+        {% if ticket.user == user %} 
+            <a href="{% url 'ticket_delete' ticket.id %}">Supprimer le ticket</a>
+            <a href="{% url 'ticket_update' ticket.id %}">Modifier le ticket</a>
+        {% endif %}
+        <br />
         --------------------------------
     {% endfor %}
 {% endblock %}
