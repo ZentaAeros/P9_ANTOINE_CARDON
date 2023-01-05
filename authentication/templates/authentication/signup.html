@@ -1,4 +1,4 @@
-{% extends 'authentication/base.html' %}
+{% extends 'base.html' %}
 {% block content %} 
     {% if form.errors %}
         {{ form.errors }}
@@ -6,6 +6,6 @@
     <form action="" method="post">
         {{ form.as_p }}
         {% csrf_token %}
-        <input type="submit" value="S'inscrire">
+        <input class="btn-inscription" type="submit" value="S'inscrire">
     </form>
 {% endblock %}

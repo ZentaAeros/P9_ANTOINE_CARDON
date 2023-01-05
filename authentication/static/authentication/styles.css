@@ -1,0 +1,87 @@
+body {
+    background-color: rgb(58,59,60);
+    color: white;
+}
+
+/* LOGIN PAGE */
+
+.connexion {
+    display: flex;
+    margin-top: 5%;
+    flex-wrap: wrap;
+}
+
+.connexion article {
+    width: 50%;
+    margin:auto;
+    text-align: center;
+    display: block;
+}
+
+.connexion article p {
+    padding: 2%;
+    width: 90%;
+    margin:auto;
+    text-align: center;
+}
+
+.connexion article a {
+    display: block;
+    margin: auto;
+    padding: 1%;
+    border-radius: 25px;
+    background-color: rgb(36,37,38);
+    width: 50%;
+    color: white;
+    text-decoration: none;
+}
+form {
+    width:50%;
+    margin: auto;
+    display: block;
+    text-align: center;
+    padding: 2%;
+}
+
+.form-control, input {
+    display: block;
+    margin:auto;
+    background-color: rgb(36,37,38);
+    border: 2px solid rgb(58,59,60);
+    width: 30%;
+    padding:1%;
+    color: white;
+}
+
+.form-control:focus, input:focus {
+    background-color: rgb(78,79,80);
+}
+
+nav {
+    background-color: rgb(36,37,38);
+}
+
+.nav-link {
+    
+    color: white;
+    border-radius: 25px;
+}
+
+.nav-link:hover {
+    color: white;
+    background-color: rgb(58,59,60);
+}
+
+/* SIGNUP PAGE */
+.btn-inscription {
+    color: white;
+    padding: 1%;
+    border-radius: 25px;
+}
+
+.btn-inscription:hover {
+    background-color: rgb(78,79,80);
+    transition-duration: .4s;
+}
+
+/*  */

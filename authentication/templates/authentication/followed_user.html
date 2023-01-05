@@ -1,0 +1,33 @@
+{% extends 'base.html' %}
+
+{% block content %} 
+    <form action="" method="post">
+        {% csrf_token %} 
+        {{ form.as_p }}
+        <input type="submit" value="Rechercher">
+    </form>
+    <table>
+        <tbody class="header">
+            <td>Vous suivez</td>
+            <td></td>
+        </tbody>
+        {% for user in user_follow %}
+        <tr>
+            <td class="table-content-name">{{ user.followed_user.first_name }} {{ user.followed_user.last_name }}</td>
+            <td class="table-content-unsubscribe"><a href="{% url 'unfollow_user' user.followed_user.id %}">SUPPRIMER</a></td>
+        </tr> 
+        {% endfor %}
+    </table>
+    <table>
+        <tbody class="header">
+            <td>Ils vous suivent</td>
+            <td></td>
+        </tbody>
+        {% for user in followed %}
+        <tr class="followed_by">
+            <td class="table-content">{{ user.user.first_name }} {{ user.user.last_name }}</td>
+            <td class="table-content"></td>
+        </tr> 
+        {% endfor %}
+    </table>
+{% endblock %}

@@ -1,7 +1,7 @@
 {% extends 'base.html' %}
 {% block content %} 
-    <h1 class="titre">Supprimer un ticket</h1>
-    <p class="sous-titre">Êtes-vous sûr de vouloir supprimer le ticket : {{ ticket.title }} ?</p>
+    <h1 class="titre">Supprimer une critique</h1>
+    <p class="sous-titre">Êtes-vous sûr de vouloir supprimer la critique : {{ review.headline }} ?</p>
 
     <form action="" method="post">
         {% csrf_token %} 

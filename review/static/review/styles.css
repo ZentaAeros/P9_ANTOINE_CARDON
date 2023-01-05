@@ -1,0 +1,168 @@
+body {
+    margin: 0;
+    background-color: rgb(24,25,26);
+}
+
+.ticket {
+    border-radius: 10px;
+    margin-top: 2%;
+    margin-bottom: 2%;
+    background-color: rgb(36,37,38);
+    padding: 2%;
+    width: 100%;
+    color: #F2F2F2;
+}
+
+.badge-ticket {
+    background-color: rgb(58,59,60);
+    color: white;
+}
+
+.badge-critique {
+    background-color: rgb(36,37,38);
+}
+
+.review {
+    margin-top: 2%;
+    color: white;
+    background-color: rgb(58,59,60);
+    padding: 2%;
+    border-radius: 50px;
+}
+
+nav {
+    background-color: rgb(36,37,38);
+}
+
+nav a, nav .menu ul li a {
+    color: white;
+    text-decoration: none;
+    border-radius: 50px;
+}
+
+nav .menu ul li a:hover {
+    background-color: rgb(58,59,60);
+    color: white;
+    border-radius: 50px;
+}
+
+.menu {
+    padding: 1%;
+}
+
+.infos {
+    color: white;
+}
+
+.btn-ticket, .btn-review {
+    color: white;
+    text-decoration: none;
+}
+
+.btn-ticket:hover {
+    background-color: rgb(58,59,60);
+    color: white;
+}
+
+.btn-review:hover {
+    text-decoration: underline;
+}
+
+.btn-nav {
+    padding-top: 2%;
+    width: 90%;
+    margin: auto;
+    text-align: center;
+}
+
+#id_title, #id_description {
+    width: 80%;
+    margin-top : 2%;
+    border: 2px solid rgb(58,59,60);
+    background-color: rgb(58,59,60);
+    border-radius: 15px;
+}
+
+form {
+    color: white;
+}
+
+label, textarea, input {
+    width: 80%;
+}
+
+input, label, textarea {
+    margin: auto;
+    display: block;
+    text-align: center;
+}
+
+input, textarea {
+    background-color: rgb(58,59,60);
+    border: 2px solid rgb(58,59,60);
+    color: white;
+    border-radius: 15px;
+}
+
+/* PAGE FOLLOWERS */
+
+table {
+    width: 80%;
+    margin: auto;
+    margin-top: 2%;
+    color: white;
+}
+
+.header {
+    width: 100%;
+    color: white;
+    background-color: rgb(36,37,38);
+}
+
+table tbody td {
+    width: 80%;
+    margin: auto;
+    padding: 1%;
+}
+
+.table-content-name {
+    border-bottom: 1px solid rgba(255,255,255,.2);
+    width: 80%;
+    background-color: rgb(58,59,60);
+}
+
+.table-content-unsubscribe {
+    background-color: rgb(58,59,60);
+    border-bottom: 1px solid rgba(255,255,255,.2);
+}
+
+table a {
+    font-size: .8vw;
+    background-color: rgb(36,37,38);
+    color: white;
+    text-decoration: none;
+    padding: 3%;
+    border-radius: 15px;
+    width: 50%;
+    display: block;
+    text-align: center;
+}
+
+table a:hover {
+    background-color: rgb(24,25,26);
+    color: white;
+    transition: .4s;
+}
+
+.followed_by {
+    background-color: rgb(58,59,60);
+}
+
+
+/* GENERAL */
+
+.titre, .sous-titre, .no_posts_to_display {
+    text-align: center;
+    color: white;
+    margin-top: 2%;
+}

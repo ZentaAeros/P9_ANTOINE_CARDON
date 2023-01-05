@@ -6,7 +6,6 @@
     <a href="{% url 'create_ticket_and_review' %}" class="btn btn-ticket"><i class="fa-solid fa-plus fa-1x"></i> Créer une critique</a>
 </section>
     {% if tickets %}
-        <h1 class="titre">Publications de {{ user }}</h1>
         {% for ticket in tickets %} 
         <section class="ticket container">
             <h3>{{ ticket.ticket.title }}</h3>
@@ -19,10 +18,13 @@
                 
                 le {{ ticket.ticket.time_created|date:"l d F Y"}} à {{ ticket.ticket.time_created|time:"H:i"}} <span class="badge badge-secondary badge-ticket">Ticket</span>
             </p>
-            <p>{{ ticket.ticket.description }}</p>
-            {% if ticket.ticket.image %}
-                <img src="{{ ticket.image.url }}" alt="" />
-            {% endif %}
+            <p>
+                {{ ticket.ticket.description }} <br />
+                {% if ticket.ticket.image %}
+                    <img src="{{ ticket.ticket.image.url }}" alt="" />
+                {% endif %}
+            </p>
+            
             {% if ticket.ticket.user == user %} 
                 <a href="{% url 'ticket_delete' ticket.ticket.id %}" class="btn btn-ticket"><i class="fa-solid fa-trash"></i> Supprimer le ticket</a>
                 <a href="{% url 'ticket_update' ticket.ticket.id %}" class="btn btn-ticket"><i class="fa-solid fa-pen"></i> Modifier le ticket</a>
@@ -81,77 +83,7 @@
         </section>
             </div>
         {% endfor %}
-    {% endif %}
-    {% for review in reviews %}
-        {% if not review.ticket.user == user %}
-            <section class="ticket container">
-                <h3>{{ review.ticket.title }}</h3>
-                <p class="infos">
-                    {% if review.ticket.user == user %}
-                        Vous avez demandé une critique
-                    {% else %}
-                        {{ review.ticket.user }} a demandé une critique
-                    {% endif %}
-                    
-                    le {{ review.ticket.time_created|date:"l d F Y"}} à {{ review.ticket.time_created|time:"H:i"}} <span class="badge badge-secondary badge-ticket">Ticket</span>
-                </p>
-                <p>{{ review.ticket.description }}</p>
-                {% if review.ticket.image %}
-                    <img src="{{ ticket.image.url }}" alt="" />
-                {% endif %}
-                {% if review.ticket.user == user %} 
-                    <a href="{% url 'ticket_delete' ticket.ticket.id %}" class="btn btn-ticket"><i class="fa-solid fa-trash"></i> Supprimer le ticket</a>
-                    <a href="{% url 'ticket_update' ticket.ticket.id %}" class="btn btn-ticket"><i class="fa-solid fa-pen"></i> Modifier le ticket</a>
-                {% endif %}
-                <section class="review">
-                    <div class="container">
-                        <h4>
-                            {{ review.headline }}
-                            
-                            {% if review.rating == 1 %}
-                                <i class="fa-solid fa-star"></i>
-                            {% elif review.rating == 2 %} 
-                                <i class="fa-solid fa-star"></i>
-                                <i class="fa-solid fa-star"></i>
-                            {% elif review.rating == 3 %} 
-                                <i class="fa-solid fa-star"></i>
-                                <i class="fa-solid fa-star"></i>
-                                <i class="fa-solid fa-star"></i>
-                            {% elif review.rating == 4 %} 
-                                <i class="fa-solid fa-star"></i>
-                                <i class="fa-solid fa-star"></i>
-                                <i class="fa-solid fa-star"></i>
-                                <i class="fa-solid fa-star"></i>
-                            {% elif review.rating == 5 %} 
-                                <i class="fa-solid fa-star"></i>
-                                <i class="fa-solid fa-star"></i>
-                                <i class="fa-solid fa-star"></i>
-                                <i class="fa-solid fa-star"></i>
-                                <i class="fa-solid fa-star"></i>
-                            {% endif %}
-
-                        </h4>
-                        <p>
-                            {% if review.user == user %}
-                                Vous avez publié une critique 
-                            {% else %}
-                                {{ review.user }} a publié une critique
-                            {% endif %}
-                             le {{ review.time_created|date:"l d F Y"}} à  {{ review.time_created|time:"H:i"}}
-                             <span class="badge badge-secondary badge-critique">Critique</span>
-                            
-                        </p>
-                        <p>{{ review.body }}</p>
-                        {% if review.user == user %}
-                            <a href="{% url 'update_review' review.id %}" class="btn btn-review"><i class="fa-solid fa-pen"></i> Modifier la critique</a>
-                            <a href="{% url 'delete_review' review.id %}" class="btn btn-review"><i class="fa-solid fa-trash"></i> Supprimer la critique</a>
-                        {% endif %}
-                    </div>
-                </section>
-            </section>
-        {% endif %}
-    {% endfor %}
-    {% if not tickets and not reviews %} 
-        <p class="no_posts_to_display">Vous trouverez vos tickets ainsi que les critiques que vous avez publié ici !</p>
+    {% else %} 
+        <p class="titre">Vous ne suivez personne pour le moment !</p>
     {% endif %}
 {% endblock %}
