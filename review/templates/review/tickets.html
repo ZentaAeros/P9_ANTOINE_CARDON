@@ -21,7 +21,7 @@
             </p>
             <p>{{ ticket.ticket.description }}</p>
             {% if ticket.ticket.image %}
-                <img src="{{ ticket.image.url }}" alt="" />
+                <img src="{{ ticket.ticket.image.url }}" alt="" /><br />
             {% endif %}
             {% if ticket.ticket.user == user %} 
                 <a href="{% url 'ticket_delete' ticket.ticket.id %}" class="btn btn-ticket"><i class="fa-solid fa-trash"></i> Supprimer le ticket</a>
