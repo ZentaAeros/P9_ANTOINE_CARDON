@@ -13,7 +13,8 @@ Bienvenue dans cette application Web conçue avec le Framework Django!
 * ENJOY ! Vous êtes prêt à utiliser l'application !
 
 ## Guide d'utilisation de l'application :
-* Il est obligatoire de se connecter pour accéder à l'application, voici différents identifiants de connexion :
+Il est obligatoire de se connecter pour accéder à l'application, voici différents identifiants de connexion :
+
 -> ID : jeandupont / password : Password123*
 
 -> ID : micheldupont / password : Password123*
