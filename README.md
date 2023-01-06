@@ -27,6 +27,19 @@ Une fois conecté, vous aurez ces options qui s'offrent à vous :
 * Vous avez la possibilité de répondre à un ticket
 * Vous avez la possibilité de modifier ou supprimer vos tickets / critiques que vous avez publié
 
+#### Créer un ticket
+* Entrez le titre et la description de votre ticket (vous pouvez également insérer une image qui est optionnel)
+* Cliquez sur "Créer" vous serez redirigé vers votre fil d'actualité où vous trouverez votre ticket fraîchement publié.
+
+#### Créer une critique
+* Entrez le titre, la description, ajoutez une image si vous le souhaitez puis ajoutez une note (entre 0 et 5 inclus) ainsi qu'un grand titre & le corps du message
+* Cliquez sur "Créer" vous serez redirigé vers votre fil d'actualité où vous trouverez votre critique fraîchement publié.
+
+#### Répondre à un ticket
+* Lorsqu'un ticket n'a pas encore eu de réponse, vous avez la possibilité de répondre.
+* Appuyez sur "Répondre" puis saisissez le titre et le corps de la répondre.
+* Cliquez sur "Répondre" vous serez redirigé vers votre fil d'actualité.
+
 ### Mes publications : 
 * Depuis cette page vous pourrez voir tous les tickets, critiques que vous avez créé, vous permettant ainsi de modifier / supprimer vos contributions.
 
@@ -36,17 +49,3 @@ Une fois conecté, vous aurez ces options qui s'offrent à vous :
 * Vous avez la possibilité de voir les personnes qui vous suivent
 
 A la fin de votre session, vous avez la possibilité de vous déconnecter via le bouton "Se déconnecter".
-
-
-### Créer un ticket
-* Entrez le titre et la description de votre ticket (vous pouvez également insérer une image qui est optionnel)
-* Cliquez sur "Créer" vous serez redirigé vers votre fil d'actualité où vous trouverez votre ticket fraîchement publié.
-
-### Créer une critique
-* Entrez le titre, la description, ajoutez une image si vous le souhaitez puis ajoutez une note (entre 0 et 5 inclus) ainsi qu'un grand titre & le corps du message
-* Cliquez sur "Créer" vous serez redirigé vers votre fil d'actualité où vous trouverez votre critique fraîchement publié.
-
-### Répondre à un ticket
-* Lorsqu'un ticket n'a pas encore eu de réponse, vous avez la possibilité de répondre.
-* Appuyez sur "Répondre" puis saisissez le titre et le corps de la répondre.
-* Cliquez sur "Répondre" vous serez redirigé vers votre fil d'actualité.
