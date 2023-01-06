@@ -48,4 +48,4 @@ Une fois conecté, vous aurez ces options qui s'offrent à vous :
 * Vous pourrez supprimer un utilisateur que vous ne souhaitez plus suivre
 * Vous avez la possibilité de voir les personnes qui vous suivent
 
-A la fin de votre session, vous avez la possibilité de vous déconnecter via le bouton "Se déconnecter".
+**A la fin de votre session, vous avez la possibilité de vous déconnecter via le bouton "*Se déconnecter*".*
