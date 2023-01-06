@@ -23,7 +23,7 @@ Il est obligatoire de se connecter pour accéder à l'application, voici différ
 
 Une fois conecté, vous aurez ces options qui s'offrent à vous : 
 
-* Fil d'actualité :
+### Fil d'actualité :
 
 -> Cette page vous permettra de voir les tickets / critiques des personnes que vous suivez et vos contributions.
 
@@ -33,11 +33,11 @@ Une fois conecté, vous aurez ces options qui s'offrent à vous :
 
 -> Vous avez la possibilité de modifier ou supprimer vos tickets / critiques que vous avez publié
 
-* Mes publications : 
+### Mes publications : 
 
 -> Depuis cette page vous pourrez voir tous les tickets, critiques que vous avez créé, vous permettant ainsi de modifier / supprimer vos contributions.
 
-* Mes abonnements :
+### Mes abonnements :
 
 -> Vous pourrez rechercher un utilisateur afin de le suivre 
 
