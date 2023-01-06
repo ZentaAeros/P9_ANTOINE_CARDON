@@ -20,7 +20,7 @@ Il est obligatoire de se connecter pour accéder à l'application, voici différ
 
 Une fois conecté, vous aurez ces options qui s'offrent à vous : 
 
-### Fil d'actualité :
+### Page *Fil d'actualité* :
 
 * Cette page vous permettra de voir les tickets / critiques des personnes que vous suivez et vos contributions.
 * Vous avez la possibilité depuis cette page de créer un ticket ou une critique
@@ -40,10 +40,10 @@ Une fois conecté, vous aurez ces options qui s'offrent à vous :
 * Appuyez sur "Répondre" puis saisissez le titre et le corps de la répondre.
 * Cliquez sur "Répondre" vous serez redirigé vers votre fil d'actualité.
 
-### Mes publications : 
+### Page *Mes publications* : 
 * Depuis cette page vous pourrez voir tous les tickets, critiques que vous avez créé, vous permettant ainsi de modifier / supprimer vos contributions.
 
-### Mes abonnements :
+### Page *Mes abonnements* :
 * Vous pourrez rechercher un utilisateur afin de le suivre 
 * Vous pourrez supprimer un utilisateur que vous ne souhaitez plus suivre
 * Vous avez la possibilité de voir les personnes qui vous suivent
