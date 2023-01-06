@@ -2,11 +2,11 @@ from django.shortcuts import render, redirect
 from authentication import forms
 from django.contrib.auth import login, logout
 from django.conf import settings
-from authentication.models import User, UserFollows
 from django.db import IntegrityError
 from django.contrib import messages
-from review.forms import SearchUser
 from django.contrib.auth.decorators import login_required
+
+from authentication.models import User, UserFollows
 
 # Create your views here.
 def signup_page(request):
@@ -25,9 +25,9 @@ def logout_view(request):
 
 @login_required
 def follow_user(request):
-    form = SearchUser()
+    form = forms.SearchUser()
     if request.method == 'POST':
-        form = SearchUser(request.POST)
+        form = forms.SearchUser(request.POST)
         if form.is_valid():
             try:
                 followed_user = User.objects.get(username=request.POST['user'])

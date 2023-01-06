@@ -1,6 +1,6 @@
 from django.shortcuts import render, redirect
 from django.contrib.auth.decorators import login_required
-from review.forms import TicketForm, SearchUser, ReviewForm
+from review.forms import TicketForm, ReviewForm
 from review.models import Ticket, Review
 from review.utils import get_tickets, get_reviews
 # Create your views here.
