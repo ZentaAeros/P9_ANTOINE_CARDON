@@ -43,7 +43,7 @@ def update_ticket(request, id):
 
         if form.is_valid():
             form.save()
-            return redirect('tickets')
+            return redirect('feed')
     return render(request, 'review/ticket_update.html', context={'form':form})
 
 @login_required
