@@ -41,7 +41,6 @@ def follow_user(request):
                         messages.error(request, f'Vous suivez déjà {followed_user}')
             except User.DoesNotExist:
                 messages.error(request, f'L\'utilisateur n\'existe pas.')
-                return render(request, 'review/followed_user.html', context={'form':form})
     user_follow = UserFollows.objects.filter(user=request.user).order_by('followed_user')
     followed = UserFollows.objects.filter(followed_user=request.user).order_by('user')
     actual_user = request.user

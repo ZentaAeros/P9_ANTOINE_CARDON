@@ -166,3 +166,8 @@ table a:hover {
     color: white;
     margin-top: 2%;
 }
+
+.error-followers {
+    text-align: center;
+    color: white;
+}
